@@ -24,8 +24,12 @@ $weuiCellFontSize:17px;
 $weuiCellTipsFontSize:14px;
 $weuiCellLabelWidth:105px;
 
-$weuiCellLineHeight: unit-less(($weuiCellHeight - 2 * $weuiCellGapV) / $weuiCellFontSize); // 高度减去上下padding的行高
-$weuiCellsMarginTop:unit(20 / $weuiCellFontSize, em);
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
+}
+
+$weuiCellLineHeight: ($weuiCellHeight - 2 * $weuiCellGapV) / $weuiCellFontSize; // 高度减去上下padding的行高
+$weuiCellsMarginTop: strip-units(20 / $weuiCellFontSize) + 'em';
 
 // weui switch
 $weuiSwitchHeight: 32px;
