@@ -6,3 +6,4 @@ shopt -s globstar
 for f in **/*.less; do less-scss-convertor $f replace; done;
 
 rename .css .scss **/*.css
+sed -i 's/^\$import/@import/' **/*.scss
