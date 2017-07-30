@@ -417,7 +417,7 @@ body, .page {
 
 /* animation */
 
-$keyframes slideIn {
+@keyframes slideIn {
     from {
         transform: translate3d(100%, 0, 0);
         opacity: 0;
@@ -428,7 +428,7 @@ $keyframes slideIn {
     }
 }
 
-$keyframes slideOut {
+@keyframes slideOut {
     from {
         transform: translate3d(0, 0, 0);
         opacity: 1;

@@ -1,7 +1,7 @@
 /*
-* Tencent is pleased to support the open source community by making WeUI available@mixin 
+* Tencent is pleased to support the open source community by making WeUI available.
 * 
-* Copyright (C) 2017 THL A29 Limited, a Tencent company. All rights reserved@mixin 
+* Copyright (C) 2017 THL A29 Limited, a Tencent company. All rights reserved.
 * 
 * Licensed under the MIT License (the "License"); you may not use this file except in compliance
 * with the License. You may obtain a copy of the License at
@@ -14,7 +14,7 @@
 * limitations under the License.
 */
 
-$import "../../base/fn";
+@import "../../base/fn";
 
 $pickerItemHeight: 34px;
 .weui-picker {
@@ -78,7 +78,7 @@ $pickerItemHeight: 34px;
     height: 100%;
     margin: 0 auto;
     z-index: 3;
-    background: linear-gradient(180deg, hsla(0, 0%, 100%, @mixin 95), hsla(0, 0%, 100%, @mixin 6)), linear-gradient(0deg, hsla(0, 0%, 100%, @mixin 95), hsla(0, 0%, 100%, .6));
+    background: linear-gradient(180deg, hsla(0, 0%, 100%, .95), hsla(0, 0%, 100%, .6)), linear-gradient(0deg, hsla(0, 0%, 100%, .95), hsla(0, 0%, 100%, .6));
     background-position: top, bottom;
     background-size: 100% 102px;
     background-repeat: no-repeat;
